@@ -1,0 +1,6 @@
+Database have to store information about:
+- employees, who works on a projects(project data: name, date of creation, status open/closed, 
+date of closing).
+-employee can work on several projects and on each project he/she can have different role
+-task for employee are given with specified deadline. Task can have different statuses: open, completed, need additional work, 
+accepted, with specified date of last status change and specified employee, who changed the status.  
