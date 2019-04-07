@@ -248,8 +248,6 @@ INNER JOIN (SELECT Tasks.EmployeeId as EmployeeId, Tasks.ProjectId, COUNT(TaskId
 			GROUP BY Tasks.EmployeeId, Tasks.ProjectId) as AllTasks ON ClosedTasks.EmployeeId = AllTasks.EmployeeId AND ClosedTasks.ProjectId = AllTasks.ProjectId
 WHERE ClosedTasks.NumberOfClosedTasks = AllTasks.NumberOfAllTasks
 
-/*12.Заданную задачу проекта перевести на сотрудника с
-минимальным количеством выполняемых им задач*/
 /*Give selected task to an employee with the least number of opened tasks*/
 GO  
 IF OBJECT_ID('UpdeteTaskFroEmployee', 'P') IS NOT NULL  
